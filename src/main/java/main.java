@@ -65,6 +65,7 @@ public class main {
         }
     }
 
+    //This function generates an INSERT SQL query using the four inputs
     public static void addStudent(String fname, String lname, String email, String date){
         try { // Load PostgreSQL JDBC Driver
             Class.forName("org.postgresql.Driver");
@@ -88,6 +89,7 @@ public class main {
         }
     }
 
+    //This function will update the email of an entry using the UPDATE SQL query
     public static void updateStudentEmail(int id, String newEmail){
         try { // Load PostgreSQL JDBC Driver
             Class.forName("org.postgresql.Driver");
@@ -111,6 +113,7 @@ public class main {
         }
     }
 
+    //This function deletes a student entry based on their ID using the DELETE FROM SQL query
     public static void deleteStudent(int id){
         try { // Load PostgreSQL JDBC Driver
             Class.forName("org.postgresql.Driver");
